@@ -23,6 +23,11 @@ public class Principal {
 		}
 		System.out.println("nada");
 		
+
+		Tabuleiro frame = new Tabuleiro(individuos[selecaoDoMelhor(individuos)]);
+		frame.setVisible(true);	
+		
+		
 		tudo:while (true) {
 			for (int i = 0; i < individuos.length; i++) {
 				if (individuos[i].getNumeroDeConflitos() == 0) {
@@ -91,8 +96,8 @@ public class Principal {
 			}
 			System.out.println();
 		}
-		Tabuleiro frame = new Tabuleiro(individuos[indice]);
-		frame.setVisible(true);	
+		Tabuleiro frame2 = new Tabuleiro(individuos[indice]);
+		frame2.setVisible(true);	
 	}
 
 	public static char[][] gerandoElementos() {
