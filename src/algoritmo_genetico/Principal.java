@@ -21,7 +21,6 @@ public class Principal {
 			individuos[i].setNumeroDeConflitos(conflitos(individuos[i]));
 			individuos[i].setFitnnes(funcaoFitness(individuos[i]));
 		}
-		System.out.println("nada");
 		
 
 		Tabuleiro frame = new Tabuleiro(individuos[selecaoDoMelhor(individuos)]);
